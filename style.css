@@ -1,0 +1,239 @@
+@import url("https://fonts.google.com/specimen/Nunito+Sans");
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Nunito+Sans" sans-serif;
+}
+.dark {
+  --black: #fff;
+  --white: #000;
+}
+.container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container:nth-child(1) {
+  box-shadow: 0 0 5px var(--black);
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+#toogle {
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--black);
+}
+
+#toogle i {
+  padding-right: 5px;
+}
+
+.form-control {
+  width: 400px;
+  box-shadow: 0 0 5px var(--black);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+i {
+  cursor: pointer;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 17px 14px;
+  outline: 0;
+  border: 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.dropdownCon {
+  width: 200px;
+  position: relative;
+}
+
+.dropDown p {
+  letter-spacing: 0.5px;
+}
+
+.dropDown {
+  width: 100%;
+  padding: 17px 14px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--black);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.drop {
+  position: absolute;
+  box-shadow: 0 0 5px var(--black);
+  top: 4rem;
+  padding: 10px 14px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.drop p {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.countries {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.country {
+  min-height: 350px;
+  box-shadow: 0 0 5px var(--black);
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  color: var(--black);
+}
+
+.country-img {
+  height: 250px;
+}
+
+.country-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country-info {
+  padding: 20px 17px;
+}
+
+.country-info h5 {
+  padding: 8px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.country-info p {
+  letter-spacing: 1px;
+}
+
+.country-info p > strong {
+  font-weight: 600;
+}
+
+.showDropDown {
+  display: none;
+}
+
+
+.countryModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 30px;
+}
+
+.back{
+  position: absolute;
+  top: 3rem;
+  left: 30px;
+  background: #fdfdfd;
+  box-shadow: 0 0 5px rgba(0, 0 , 0 , 0.3);
+  padding: 10px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.leftModal {
+  width: 50%;
+}
+
+.leftModal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.rightModal{
+  width: 50%;
+  margin-left: 40px;
+}
+
+.modalInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightModal h1 {
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.inner p>strong{
+  font-weight: 600;
+}
+
+.inner p{
+  letter-spacing: 1px;
+}
+
+.show {
+  display: none;
+}
